@@ -1,0 +1,4 @@
+GET http://localhost:5000/prompts
+
+POST  http://localhost:5000/videos
+Content-Type: multipart/form-data; boundary=----WebKitFormBoudary7MA4YWxkTrZu0gW
