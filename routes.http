@@ -18,5 +18,16 @@ POST http://localhost:5000/videos/01131852-97e8-4d54-a821-005ce21021b4/transcrip
 Content-Type: application/json
 
 {
-    "prompt": "desenvolvimento, programação"
+    "prompt": "treino, academia"
+}
+
+####
+
+POST http://localhost:5000/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "01131852-97e8-4d54-a821-005ce21021b4",
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''",
+    "temperature": 0.5
 }
